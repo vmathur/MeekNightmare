@@ -2,10 +2,13 @@
 using System.Collections;
 
 public class GameOver : MonoBehaviour {
+	public GameObject target;
+	private Vector3 startingPosition;
 
-	void OnCollisionEnter(Collision collisionInfo)
-	{
-		print ("yolo");
-		//score = 0
+	void OnTriggerEnter(Collider enter){
+		Debug.Log("hi");
+		target.transform.localPosition = startingPosition;
+
+		Debug.Log("sup");
 	}
 }

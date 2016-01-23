@@ -18,6 +18,7 @@ using System.Collections;
 [RequireComponent(typeof(Collider))]
 public class Teleport : MonoBehaviour {
   private Vector3 startingPosition;
+  public GameObject target;
 
   void Start() {
     startingPosition = transform.localPosition;
@@ -30,6 +31,13 @@ public class Teleport : MonoBehaviour {
       Application.Quit();
     }
   }
+
+  void OnTriggerEnter(Collider target){
+		Debug.Log("hi");
+		transform.localPosition = startingPosition;
+		Debug.Log("sup");
+  }
+
 
   public void SetGazedAt(bool gazedAt) {
     GetComponent<Renderer>().material.color = gazedAt ? Color.green : Color.red;
