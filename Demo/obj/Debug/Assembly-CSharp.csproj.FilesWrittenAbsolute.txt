@@ -11,3 +11,7 @@
 /Users/Vishal/Dev/MeekNightmare/Demo/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/Vishal/Dev/MeekNightmare/Demo/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/Vishal/Dev/MeekNightmare/Demo/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/Vishal/Dev/MeekNightmare/Demo/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Vishal/Dev/MeekNightmare/Demo/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Vishal/Dev/MeekNightmare/Demo/obj/Debug/Assembly-CSharp.dll
+/Users/Vishal/Dev/MeekNightmare/Demo/obj/Debug/Assembly-CSharp.dll.mdb
