@@ -8,8 +8,9 @@ public class FindYou : MonoBehaviour {
 	void Start () {
 	}
 
-	// Update is called once per frame
 	void Update () {
-		transform.position = Vector3.MoveTowards(transform.position, target.transform.position,   speed*Time.deltaTime);
+		print (transform.position);
+		print (target.gameObject.transform.position);
+		transform.position = Vector3.MoveTowards(transform.position, target.gameObject.transform.position,   speed*Time.deltaTime);
 	}
 }
