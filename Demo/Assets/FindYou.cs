@@ -9,8 +9,6 @@ public class FindYou : MonoBehaviour {
 	}
 
 	void Update () {
-		print (transform.position);
-		print (target.gameObject.transform.position);
 		transform.position = Vector3.MoveTowards(transform.position, target.gameObject.transform.position,   speed*Time.deltaTime);
 	}
 }
