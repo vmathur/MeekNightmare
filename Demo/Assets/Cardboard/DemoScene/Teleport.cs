@@ -18,7 +18,7 @@ using System.Collections;
 [RequireComponent(typeof(Collider))]
 public class Teleport : MonoBehaviour {
   private Vector3 startingPosition;
-  public GameObject target;
+  public GameObject target; 
 
   void Start() {
     startingPosition = transform.localPosition;
@@ -36,6 +36,10 @@ public class Teleport : MonoBehaviour {
 		transform.localPosition = startingPosition;
         Debug.Log("reset");
 		Application.LoadLevel (2);
+		scoring_system.value = 0; 
+
+		print(scoring_system.value);
+
     }
 
 
