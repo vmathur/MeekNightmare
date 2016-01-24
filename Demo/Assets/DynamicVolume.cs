@@ -9,9 +9,17 @@ public class DynamicVolume : MonoBehaviour {
 	}
 	public GameObject go = GameObject.Find("Sphere");
 	// Update is called once per frame
-	public float maxDistance = 20.0f;
+	public float maxDistance = 30.0f;
 	void Update () {
-		float volumeSet = (float)(maxDistance-Vector3.Distance(GameObject.Find("Sphere").transform.position,player.gameObject.transform.position))/maxDistance;
-		go.GetComponent<AudioSource>().volume = volumeSet;
+        if (Vector3.Distance(GameObject.Find("Sphere").transform.position, player.gameObject.transform.position) >= 30)
+        {
+            go.GetComponent<AudioSource>().volume = 0.3f;
+        }
+        else
+        {
+            float volumeSet = (float)(maxDistance - Vector3.Distance(GameObject.Find("Sphere").transform.position, player.gameObject.transform.position)) / maxDistance;
+            go.GetComponent<AudioSource>().volume = volumeSet;
+        }
+		
 	}
 }
