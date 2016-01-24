@@ -33,10 +33,9 @@ public class Teleport : MonoBehaviour {
   }
 
   void OnTriggerEnter(Collider target){
-		Debug.Log("hi");
 		transform.localPosition = startingPosition;
-		Debug.Log("sup");
-  }
+        Debug.Log("reset");
+    }
 
 
   public void SetGazedAt(bool gazedAt) {
