@@ -18,7 +18,7 @@ public class scoring_system : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		value += (Mathf.Round(Time.unscaledTime))/100;
-        text.text = "Dreaming for " + value;
+        text.text = "Dream Seconds: " + value;
 	}
 
 	public void death () {
