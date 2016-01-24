@@ -11,6 +11,8 @@ public class PlayAgain : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Cardboard.SDK.Triggered) {
+			TextMesh textObject = GameObject.Find("OverText").GetComponent<TextMesh>();
+			textObject.text = "Loading...";
 			Application.LoadLevel (1);
 		}
 	}
