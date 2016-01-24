@@ -35,6 +35,7 @@ public class Teleport : MonoBehaviour {
   void OnTriggerEnter(Collider target){
 		transform.localPosition = startingPosition;
         Debug.Log("reset");
+		Application.LoadLevel (2);
     }
 
 

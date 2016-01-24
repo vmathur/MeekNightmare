@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class FindYou : MonoBehaviour {
-	float speed  = 1.0f; // move speed
+	float speed  = 5.0f; // move speed
 	public GameObject target;
 
 	void Start () {
