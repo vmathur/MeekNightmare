@@ -6,7 +6,7 @@ using System.Collections;
 [RequireComponent(typeof(Text))]
 public class scoring_system : MonoBehaviour {
     private Text text;
-    public static float value = 0;
+    public static float timer = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -17,12 +17,12 @@ public class scoring_system : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		value += (Mathf.Round(Time.unscaledTime))/100;
-        text.text = "Dream Seconds: " + value;
+		timer += Time.deltaTime;
+        text.text = "Dream Seconds: " + timer;
 	}
 
 	public void death () {
 		print ("thevalueiszero");
-		value = 0;
+		timer = 0;
 	}
 }

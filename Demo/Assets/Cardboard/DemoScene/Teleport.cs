@@ -36,9 +36,9 @@ public class Teleport : MonoBehaviour {
 		transform.localPosition = startingPosition;
         Debug.Log("reset");
 		Application.LoadLevel (2);
-		scoring_system.value = 0; 
+		scoring_system.timer = 0; 
 
-		print(scoring_system.value);
+		print(scoring_system.timer);
 
     }
 
