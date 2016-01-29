@@ -6,7 +6,7 @@ public class Autowalk : MonoBehaviour
 	private const int RIGHT_ANGLE = 90; 
 
 	// This variable determinates if the player will move or not 
-	private bool isWalking = false;
+	private bool isWalking = true;
 
 	CardboardHead head = null;
 
